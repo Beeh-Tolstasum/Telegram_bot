@@ -7,7 +7,7 @@ import subprocess
 
 # ВАЖНО: Модуль pyautogui, команды ввода текста/Enter и их обработчики удалены.
 
-API_TOKEN = '8577346503:AAFR-fUFsh7LGqNYh1BUTiSCPYeotFXD83k'
+API_TOKEN = 'You_Api_Bot_Father'
 bot = telebot.TeleBot(API_TOKEN)
 
 # --- Настройки для Запуска/Закрытия Приложений ---
@@ -122,6 +122,7 @@ def close_app(message):
                          parse_mode='Markdown')
     except Exception as e:
         bot.send_message(message.chat.id, f"Общая ошибка при закрытии: {e}")
+
 
 
 bot.infinity_polling()
